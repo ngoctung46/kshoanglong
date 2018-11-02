@@ -1,0 +1,9 @@
+<ngb-carousel *ngIf="carousels">
+  <ng-template *ngFor="let carousel of carousels" ngbSlide>
+    <img [src]="carousel.imageUrl" [alt]="carousel.title" style="width: 100%;">
+    <div class="carousel-caption">
+      <h3>{{ carousel.title }}</h3>
+      <p>{{ carousel.subTitle }}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
